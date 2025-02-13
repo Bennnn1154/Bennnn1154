@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="button1">test</button>
+        This button will send you to jail
+        <br>
+        <button id="button2">do not touch</button>
+
+    </div>
+
+    <script>
+        var ws = new WebSocket("ws://localhost:8500")
+
+        document.getElementById("button1").addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+
+        document.getElementById("button2").addEventListener("click",function(){
+            alert("按啥呢老鐵")
+        })
+
+    </script>
+</body>
+</html>
